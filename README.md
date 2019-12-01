@@ -1,4 +1,5 @@
-# node2study
+node2study
+
 my notes on learning nodejs
 
 #### 1. node的基本概述
@@ -42,7 +43,7 @@ my notes on learning nodejs
 
 - readdir(path, callback)：读取文件目录，得到包括文件和文件夹
 
-- ```javascript
+  ```javascript
   fs.readdir('./etc/', function(err, files) {
     var directoryNameArr = [];
   	(function interator(i) { // 利用迭代器巧妙的把异步变成同步
@@ -59,5 +60,31 @@ my notes on learning nodejs
   }
   ```
 
-  
+
+
+#### 5. path模块
+
+- extname()：获取扩展名
+
+#### 6. 模块
+
+- export和import
+
+```javascript
+// 1. require是从当前文件路径出发寻找其依赖的文件
+// 2. fs等等其他模块是当前终端路径出发寻找文件，所以推荐使用：__dirname
+// 3. require模块的时候，模块默认会被执行一次
+```
+
+- post请求需要对req进行监听，有data、end等等事件回调。
+
+  ```javascript
+  // 表单上传form enctype="multipart/form-data"
+  ```
+
+#### 7. ejs模版
+
+- <%=  %> 本质处理字符串
+
+#### 8. jade模版
 
