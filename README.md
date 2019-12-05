@@ -88,3 +88,25 @@ my notes on learning nodejs
 
 #### 8. jade模版
 
+#### 9. express框架
+
+- app.use() 中间件，非精确匹配路由
+
+  ```javascript
+  example: admin/apple/123
+  // 1. originUrl   ==> admin/apple/123
+  // 2. baseUrl     ==> admin
+  // 3. path        ==> apple/123
+  ```
+
+  
+
+- 自定义views文件夹
+
+  ```javascript
+  app.set('views', '你的文件夹');
+  ```
+
+- GET方法， 使用res.query得到参数
+- POST方法，使用res.body得到参数
+
